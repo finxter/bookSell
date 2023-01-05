@@ -22,6 +22,7 @@ function App() {
           const account = await ethereum.request({
             method: "eth_requestAccounts",
           });
+
           const provider = new ethers.providers.Web3Provider(ethereum);
           const signer = provider.getSigner();
           const contract = new ethers.Contract(
@@ -41,11 +42,11 @@ function App() {
   }, []);
   console.log(state);
   return (
-    <>
+    <div className="bg-black min-h-full">
       <Heading></Heading>
       <Book state={state}></Book>
       <Receipt state={state}></Receipt>
-    </>
+    </div>
   );
 }
 

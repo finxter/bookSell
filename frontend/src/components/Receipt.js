@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import ethers from "ethers";
 
-const Book = ({ state }) => {
+const Receipt = ({ state }) => {
   const { contract } = state;
   const [receipts, setReceipts] = useState([]);
   useEffect(() => {
@@ -56,4 +56,4 @@ const Book = ({ state }) => {
   );
 };
 
-export default Book;
+export default Receipt;

@@ -1,6 +1,6 @@
 import "./App.css";
 import Heading from "./components/Heading";
-import abi from "./BookSell.json";
+import abi from ".BookSell.json";
 import { ethers } from "ethers";
 import { useEffect, useState } from "react";
 import { Contract } from "hardhat/internal/hardhat-network/stack-traces/model";
